@@ -4,7 +4,7 @@
 #4.Даны объемы и массы двух тел из разных материалов. Определить, плотность какого тела больше.
 
 
-def retab1():
+def zadanie1():
     a = int(input("введите число 1 "))
     b = int(input("введите число 2 "))
     c = int(input("введите число 3 "))
@@ -17,9 +17,9 @@ def retab1():
     else:
         print("нет взаимно противоположных чисел")
 
-#retab1()
+zadanie1()
 
-def retab2():
+def zadanie2():
     n = 0 
     a1 = int(input("введите число 1 "))
     a2 = int(input("введите число 2 "))
@@ -40,9 +40,9 @@ def retab2():
     else:
         print("нет отличных чисел")
 
-#retab2()
+zadanie2()
 
-def zalupnaiageometria():
+def zadanie3():
     s = 0
     a1 = [0, 0]; a2 = [0, 0]
     a3 = [0, 0]; a4 = [0, 0]
@@ -103,7 +103,17 @@ def zalupnaiageometria():
     print(h3w3)
     s = h3w3[0]*h3w3[1]
     print(s)
-zalupnaiageometria()
+zadanie3()
+
+def zadanie4():
+    v1 = float(input()); v2 = float(input())
+    m1 = float(input()); m2 = float(input())
+    if (m1/v1) > (m2/v2):
+        print("плотность тела 1 больше")
+    else:
+        print("плотность тела 2 больше")
+zadanie4()
+
 
 
 
