@@ -17,7 +17,7 @@ def zadanie1():
     else:
         print("нет взаимно противоположных чисел")
 
-zadanie1()
+#zadanie1()
 
 def zadanie2():
     n = 0 
@@ -40,7 +40,7 @@ def zadanie2():
     else:
         print("нет отличных чисел")
 
-zadanie2()
+#zadanie2()
 
 def zadanie3():
     s = 0
@@ -48,9 +48,8 @@ def zadanie3():
     a3 = [0, 0]; a4 = [0, 0]
     b1 = [0, 0]; b2 = [0, 0]
     b3 = [0, 0]; b4 = [0, 0]
-    big1 = [0, 0]; big2 = [0, 0]
-    big3 = [0, 0]; big4 = [0, 0]
-    h1w1 = [0, 0]; h2w2 = [0, 0]; h3w3 = [0, 0]
+    big1 = [0, 0]; big3 = [0, 0];
+    h1w1 = [0, 0]; h2w2 = [0, 0];
     a4[0] = int(input("")); a4[1] = int(input(""))
     b4[0] = int(input("")); b4[1] = int(input(""))
     h1w1[0] = abs(int(input(""))); h1w1[1] = abs(int(input("")))
@@ -64,45 +63,30 @@ def zadanie3():
     b2[0] = b1[0] + h2w2[1]; b2[1] = b1[1]
     b3[0] = b4[0] + h2w2[1]; b3[1] = b4[1]
     print(b1, b2, b3, b4)
-    if a3[0] >= b3[0]:
-        big3[0] = a3[0] 
-    else: 
-        big3[0] = b3[0]
 
-    if a3[1] <= b3[1]:
-        big3[1] = a3[1] 
-    else: 
-        big3[1] = b3[1] 
+    #координаты левого верхнего угла
+    if a1[0] < b1[0]:
+        big1[0] = a1[0]
+    else:
+        big1[0] = b1[0] 
 
-    if a4[0] <= b4[0]:
-        big3[0] = a3[0] 
-    else: 
-        big4[0] = b4[0]
-    big4[1] = big3[1]; big1[0] = big4[0] 
-
-    if a1[1] >= b1[1]:
-        big1[1] = a1[1] 
-    else: 
+    if a1[1] > b1[1]:
+        big1[1] = a1[1]
+    else:
         big1[1] = b1[1]
-    big2[0] = big3[0]; big2[1] = big1[1]
-    print(big1, big2, big3, big4)
-    if big1[0] < 0 and big2[0] >= 0: 
-        h3w3[0] = abs(big1[0]) + abs(big2[0])
-    elif big1[0] < 0 and big2[0] < 0: 
-        h3w3[0] = abs(big1[0]) - abs(big2[0])
-    else: 
-        h3w3[0] = abs(big2[0]) - abs(big1[0])
-    
-    if big4[1] < 0 and big1[1] >= 0: 
-        h3w3[1] = abs(big4[1]) + abs(big1[1])
-    elif big4[1] < 0 and big1[1] < 0: 
-        h3w3[1] = abs(big4[1]) - abs(big1[1])
-    else: 
-        h3w3[1] = abs(big1[1]) - abs(big4[1])
 
-    print(h3w3)
-    s = h3w3[0]*h3w3[1]
-    print(s)
+    #координаты правого нижнего угла
+    if a3[0] > b3[0]:
+        big3[0] = a3[0]
+    else:
+        big3[0] = b3[0] 
+
+    if a3[1] < b1[1]:
+        big3[1] = a3[1]
+    else:
+        big3[1] = b3[1]
+    print("координаты левого верхнего угла: ", big1, "\nкоординаты правого нижнего угла: ", big3)
+
 zadanie3()
 
 def zadanie4():
@@ -112,7 +96,7 @@ def zadanie4():
         print("плотность тела 1 больше")
     else:
         print("плотность тела 2 больше")
-zadanie4()
+#zadanie4()
 
 
 
