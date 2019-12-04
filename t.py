@@ -17,7 +17,7 @@ def zadanie1():
     else:
         print("нет взаимно противоположных чисел")
 
-zadanie1()
+#zadanie1()
 
 def zadanie2():
     n = 0 
@@ -39,71 +39,23 @@ def zadanie2():
         print("число a4 отлично от других, n = ", n)          
     else:
         print("нет отличных чисел")
-
-zadanie2()
+#zadanie2()
+        
 
 def zadanie3():
-    s = 0
-    a1 = [0, 0]; a2 = [0, 0]
-    a3 = [0, 0]; a4 = [0, 0]
-    b1 = [0, 0]; b2 = [0, 0]
-    b3 = [0, 0]; b4 = [0, 0]
-    big1 = [0, 0]; big2 = [0, 0]
-    big3 = [0, 0]; big4 = [0, 0]
-    h1w1 = [0, 0]; h2w2 = [0, 0]; h3w3 = [0, 0]
-    a4[0] = int(input("")); a4[1] = int(input(""))
-    b4[0] = int(input("")); b4[1] = int(input(""))
-    h1w1[0] = abs(int(input(""))); h1w1[1] = abs(int(input("")))
-    h2w2[0] = abs(int(input(""))); h2w2[1] = abs(int(input("")))
-    print(h1w1, h2w2)
-    a1[1] = a4[1] + h1w1[0]; a1[0] = a4[0] 
-    a2[0] = a1[0] + h1w1[1]; a2[1] = a1[1]
-    a3[0] = a4[0] + h1w1[1]; a3[1] = a4[1]
-    print(a1, a2, a3, a4)
-    b1[1] = b4[1] + h2w2[0]; b1[0] = b4[0] 
-    b2[0] = b1[0] + h2w2[1]; b2[1] = b1[1]
-    b3[0] = b4[0] + h2w2[1]; b3[1] = b4[1]
-    print(b1, b2, b3, b4)
-    if a3[0] >= b3[0]:
-        big3[0] = a3[0] 
-    else: 
-        big3[0] = b3[0]
+    x1 = 0; y1 = 0; h1 = 0; w2 = 0
+    x2 = 0; y1 = 0; h3 = 0; w4 = 0
+    x3 = 0; y3 = 0; x4 = 0; y4 = 0
+    x1 = int(input("Введите координаты левого нижнего угла первого прямоугольника (x)"))
+    y1 = int(input("Введите координаты левого нижнего угла первого прямоугольника (y)"))
+    h1 = int(input("Введите высоту первого прямоугольника"))
+    w1 = int(input("Введите ширину первого прямоугольника"))
+    x2 = int(input("Введите координаты левого нижнего угла втоого прямоугольника(x)"))
+    y2 = int(input("Введите координаты левого нижнего угла втоого прямоугольника(y)"))
+    h2 = int(input("Введите высоту второго прямоугольника"))
+    w2 = int(input("Введите ширину второго прямоугольника"))     
 
-    if a3[1] <= b3[1]:
-        big3[1] = a3[1] 
-    else: 
-        big3[1] = b3[1] 
-
-    if a4[0] <= b4[0]:
-        big3[0] = a3[0] 
-    else: 
-        big4[0] = b4[0]
-    big4[1] = big3[1]; big1[0] = big4[0] 
-
-    if a1[1] >= b1[1]:
-        big1[1] = a1[1] 
-    else: 
-        big1[1] = b1[1]
-    big2[0] = big3[0]; big2[1] = big1[1]
-    print(big1, big2, big3, big4)
-    if big1[0] < 0 and big2[0] >= 0: 
-        h3w3[0] = abs(big1[0]) + abs(big2[0])
-    elif big1[0] < 0 and big2[0] < 0: 
-        h3w3[0] = abs(big1[0]) - abs(big2[0])
-    else: 
-        h3w3[0] = abs(big2[0]) - abs(big1[0])
-    
-    if big4[1] < 0 and big1[1] >= 0: 
-        h3w3[1] = abs(big4[1]) + abs(big1[1])
-    elif big4[1] < 0 and big1[1] < 0: 
-        h3w3[1] = abs(big4[1]) - abs(big1[1])
-    else: 
-        h3w3[1] = abs(big1[1]) - abs(big4[1])
-
-    print(h3w3)
-    s = h3w3[0]*h3w3[1]
-    print(s)
-zadanie3()
+adanie3()
 
 def zadanie4():
     v1 = float(input()); v2 = float(input())
@@ -112,7 +64,7 @@ def zadanie4():
         print("плотность тела 1 больше")
     else:
         print("плотность тела 2 больше")
-zadanie4()
+#zadanie4()
 
 
 
