@@ -48,7 +48,7 @@ def task3(n):
         print("num: ", num, "sum: ", s)
 task3(int(input("Введите число: ")))
 
-
+#helloworld!
 
 
 
